@@ -155,6 +155,44 @@ Reading file: cat, more, less (Backward scrolling, better memory use, less>more)
  \$ when UID is 0 (root), a # otherwise a $
  ```
  
+ grep Global regular expression print
+ grep in directory use -R `grep -R apple /sss/sss/sss`
+ -Rn where it was located 
+ -Rh - suppress file name
+ -RL - files that do not match
+ `grep --color=auto abc abtc.txt`
+ 
+ TR - translating 
+ ```
+ echo '12345343' | tr '123456' 'EBGDAE'
+ EBGDAGDG
+ ```
+ works like mapping , use case replace special characters
+ 
+ deleting and sqeezing 
+ ```
+ -d Detele characters in listed set
+ -s Squeeze repeats in listed set
+ -c Use complementary set
+ -dc Delete characters not in set
+ -sc Squeeze characcters not in listed set
+ ```
+ SED stream editor
+ 
+ substitution `sed 's/a/b' `
+ s: substitution, a: search string, b: replacement string 
+ `echo 'upsrtream' | sed 's/up/down'`
+ by default does not search globally to to that globally:
+  `echo 'upsrtream' | sed 's/up/down/g'`
+  
+delimiters are modifieble
+  `echo 'upsrtream' | sed 's:up:down:g'`
+  
+CUT cut out some portion caracters, butes, filds (byte in english = character)
+`cut -c 2-10 a.txt` - characters
+`cut -f 2, 6 a.txt` - columns
+
+ 
  
  
 
