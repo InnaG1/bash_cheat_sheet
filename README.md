@@ -118,6 +118,43 @@ Reading file: cat, more, less (Backward scrolling, better memory use, less>more)
  fi
  ```
  
+ Commad alliaces:
+ `alias ll='ls -la'`
+ 
+ also can redefine a command to add options
+ ```
+ alias mv='mv -i'
+ alias cp='cp -i'
+ alias rm='rm -i'
+ alias du='du -h'
+  ```
+  
+  export PATH='/ss/bin:$PATH'
+ 
+ history -c - clear
+ 
+ export HISTSIZE=10000 # default 500
+ export HISTCONTROL=ignoreboth # ignoredups::ignorespace
+ export HISTIGNORE="history:pwd:exit:df:ls:ls -la:ll"
+ 
+ 
+ Customize command prompt:
+ 
+ ```
+ PS1="-->"
+ \u - user name
+ \s - current shell
+ \w current working directoru
+ \W basename of current working directory
+ \d date
+ \D{format} - date in format("%Y-%m-%d")
+ \T time
+ \H hostname
+ \h hostname up to first "."
+ \! history number of this command
+ \$ when UID is 0 (root), a # otherwise a $
+ ```
+ 
  
  
 
