@@ -99,8 +99,8 @@ Reading file: cat, more, less (Backward scrolling, better memory use, less>more)
  >> appends
  
  Pipe:
- | pipes to the command
- ps aux | less
+ \| pipes to the command
+ ps aux \| less
  
  or you can use direct input <
  
@@ -112,10 +112,11 @@ Reading file: cat, more, less (Backward scrolling, better memory use, less>more)
  ~/.bash_profile, ~/.bash_login, ~/.profile, ~/.login
  
  .bashrc for each terminal, so to run the same then you first log in:
- `if [ -f ~/.bashrc ]; then
+ ```
+ if [ -f ~/.bashrc ]; then
     source ~/.bashrc
-  fi
- `
+ fi
+ ```
  
  
  
