@@ -107,5 +107,16 @@ Reading file: cat, more, less (Backward scrolling, better memory use, less>more)
  Suppressing output /dev/null - > special output device, unix just dicurd
  
  
+ Profile, login, resource files:
+ 
+ ~/.bash_profile, ~/.bash_login, ~/.profile, ~/.login
+ 
+ .bashrc for each terminal, so to run the same then you first log in:
+ `if [ -f ~/.bashrc ]; then
+    source ~/.bashrc
+  fi
+ `
+ 
+ 
  
 
