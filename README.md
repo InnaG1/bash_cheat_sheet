@@ -38,5 +38,74 @@ Reading file: cat, more, less (Backward scrolling, better memory use, less>more)
  
  
  File ownership:
+ whoami
+ 
+ 
+ Exit:
+ q, x, ctrl+q,ctrl+x, ESC
+ Force quit = ctrl +c
+ 
+ whereis, which, whatis
+ 
+ System into commands:
+ date, 
+ uptime, 
+ who - list of all users
+ uname - unix name
+ dimainname
+ 
+ Disc information info:
+ df - disc free space
+ df -h actual amount
+ df -H base 10
+ du - disc usage
+ du - ah (a - all)
+ du - hd 1 ~/.../ (1 depth function)
+ 
+ Viewing processes 
+ ps- process status, owned by me and not background
+ ps - a all but still not backgound
+ ps aux all, include column with user, background
+ 
+ Monitoring Processes:
+ top 
+ -o order, s - refresh, -U user, n - number
+ 
+ Stopping Processes:
+ kill pid - sometimes whould not work
+ kill -9 pid 
+ 
+ Text file helpers:
+ wc, sort, uniq 
+ 
+ Utility Programs:
+ cal/ncal - calendar, 
+ bc - calculator
+ expr - expression evaluator
+ units - unit conversion
+ 
+ Hitory
+ located in .bash_history when it closes
+ 
+ !<number>
+ !-<number fi the commands back>
+ !<beginning of the command>
+ !! - previous command , useful when sudo !!
+ !$ - ference previous commands argument
+ 
+ 
+ Input/Output:
+ > to_filename (overwrites)
+ >> appends
+ 
+ Pipe:
+ | pipes to the command
+ ps aux | less
+ 
+ or you can use direct input <
+ 
+ Suppressing output /dev/null - > special output device, unix just dicurd
+ 
+ 
  
 
